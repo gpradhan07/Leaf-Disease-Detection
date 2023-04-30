@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="app.css">
+    <title>Models</title>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Spinach Leaf Diease Detection</div>
+
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="index.html" class="Link">Diseases</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="prevention.html" class="Link">Preventions</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="models.html" class="Link link-active">Models</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h1>Convolutional Neural Network</h1>
+    <div class="details-container">
+        <!-- <h1 class="heading">Heading</h1> -->
+        <div class="text-container">
+            <p>
+                Convolutional Neural Networks (CNNs) are a type of neural network that is commonly used in deep learning for image and video recognition, classification, and processing tasks.
+                <ul>
+                    <li>CNNs are designed to process data with a grid-like topology, such as an image. They consist of multiple layers, including convolutional layers, pooling layers, and fully connected layers.</li>
+                    <br>
+                    <li>
+                        In a convolutional layer, the network learns to extract features from the input image through a process called convolution, where a set of filters is applied to the image. This results in a set of feature maps that highlight different patterns and structures in the input image.
+                    </li>
+                    <br>
+                    <li>
+                        Pooling layers are used to reduce the spatial dimensions of the feature maps and make the network more efficient. They do this by downsampling the feature maps, typically using max or average pooling.
+                    </li>
+                    <br>
+                    <li>
+                        Finally, fully connected layers are used to classify the image or extract additional features from the reduced feature maps.
+                    </li>
+                    <br>
+                    <li>
+                        By combining these layers, CNNs are able to learn complex representations of images and perform highly accurate classification and recognition tasks.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Accuracy Achieved:</strong> 50 epocs;  87% , 100 epocs; 97%;
+                    </li>
+                </ul>
+
+            </p>
+        </div>
+        <div class="img-container">
+            <img src="imgs\cnn_output.png" alt="Image">
+        </div>
+    </div>
+    
+</section>
+
+<section class="section ow">
+    <h1>VGG16</h1>
+<div class="details-container">
+    <!-- <h1 class="heading">Heading</h1> -->
+    <div class="text-container">
+        <p>
+            VGG16 is a popular deep convolutional neural network architecture that was developed by the Visual Geometry Group (VGG) at the University of Oxford. It was introduced in 2014 as an entry in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) and achieved state-of-the-art results at that time.
+            <ul>
+                <li>The VGG16 network consists of 16 convolutional layers and 3 fully connected layers, with a total of 138 million parameters. It takes an input image of size 224x224 and outputs a probability distribution over 1000 possible classes. The architecture is characterized by its use of very small 3x3 filters throughout the convolutional layers, which results in a large number of parameters but also allows for greater expressive power.</li>
+                <br>
+                <li>
+                    VGG16 has been used as a feature extractor in many computer vision tasks such as object detection, image segmentation, and face recognition. It is also frequently used as a pre-trained model for transfer learning, where the weights learned on large datasets like ImageNet are used as a starting point for training on smaller datasets.
+                </li>
+                <br>
+                <li>
+                    <strong>Accuracy Achieved:</strong> 50 epocs;  90% , 100 epocs; 93%;
+                </li>
+            </ul>
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="imgs\Vgg16.png" alt="Image">
+    </div>
+</div>
+
+</section>
+
+<section class="section">
+    <h1>ResNet50V2</h1>
+<div class="details-container">
+    <!-- <h1 class="heading">Heading</h1> -->
+    <div class="text-container">
+        <p>
+            ResNet50V2 is a deep convolutional neural network architecture that was introduced by Microsoft Research in 2016 as an improvement over the original ResNet architecture. ResNet stands for Residual Network, and the basic idea behind ResNet is to add shortcut connections between layers to help alleviate the vanishing gradient problem.
+            <ul>
+                <li>ResNet50V2 is a 50-layer deep convolutional neural network architecture that was introduced in 2017 as an improvement over the original ResNet50 architecture.</li>
+                <br>
+                <li>
+                    The main innovation of ResNet50V2 is the use of the "bottleneck" architecture, where the network uses 1x1 convolutions to reduce the dimensionality of the input, then applies a 3x3 convolution to extract features.
+                </li>
+                <br>
+                <li>
+                    ResNet50V2 uses skip connections that allow gradients to flow more easily through the network, which helps to alleviate the vanishing gradient problem and allows for easier training.
+                </li>
+                <br>
+                <li>
+                    The network uses batch normalization to normalize the activations of each layer, which helps to improve the stability and convergence of the training process.
+                </li>
+                <br>
+                <li>
+                    ResNet50V2 has been shown to achieve state-of-the-art performance on a variety of computer vision tasks, including image classification, object detection, and semantic segmentation.
+                </li>
+                <br>
+                <li>
+                    <strong>Accuracy Achieved:</strong> 50 epocs;  64% , 100 epocs; 92%;
+                </li>
+            </ul>
+
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="imgs\Resvet50V2.png" alt="Image">
+    </div>
+</div>
+
+</section>
+
+<section class="section ow">
+    <h1>InceptionV3</h1>
+<div class="details-container">
+    <!-- <h1 class="heading">Heading</h1> -->
+    <div class="text-container">
+        <p>
+            Inception V3 is a deep convolutional neural network architecture that was introduced by Google in 2015 as an improvement over the original Inception and Inception V2 architectures.
+            <ul>
+                <li>The main innovation of Inception V3 is the use of the "Inception module", which is a network block that performs multiple convolutions of different sizes on the same input and concatenates their outputs.</li>
+                <br>
+                <li>
+                    Inception V3 has a deep architecture with 48 convolutional layers and 11 million parameters, but it also uses various techniques to reduce overfitting, including dropout, weight decay, and data augmentation.
+                </li>
+                <br>
+                <li>
+                    Inception V3 uses batch normalization to normalize the activations of each layer, which helps to improve the stability and convergence of the training process.
+                </li>
+                <br>
+                <li>
+                    Inception V3 has been shown to achieve state-of-the-art performance on a variety of computer vision tasks, including image classification, object detection, and semantic segmentation. 
+                </li>
+                <br>
+                <li>
+                    <strong>Accuracy Achieved:</strong> 50 epocs;  92% , 100 epocs; 93%;
+                </li>
+            </ul>
+
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="imgs\InceptionV3.png" alt="Image">
+    </div>
+</div>
+
+</section>
+
+<section class="section">
+    <h1>MobileNetV2</h1>
+<div class="details-container">
+    <!-- <h1 class="heading">Heading</h1> -->
+    <div class="text-container">
+        <p>
+            MobileNetV2 is a deep convolutional neural network architecture that was introduced by Google in 2018 as an improvement over the original MobileNet architecture.
+            <ul>
+                <li>The main innovation of MobileNetV2 is the use of the "inverted residual" block, which consists of a 1x1 convolution that expands the number of channels, followed by a depthwise separable convolution.</li>
+                <br>
+                <li>
+                    MobileNetV2 is designed to be lightweight and efficient, making it suitable for deployment on mobile and embedded devices with limited computational resources.
+                </li>
+                <br>
+                <li>
+                    The network uses batch normalization to normalize the activations of each layer, which helps to improve the stability and convergence of the training process.
+                </li>
+                <br>
+                <li>
+                    MobileNetV2 has been shown to achieve high accuracy on a variety of computer vision tasks, including image classification, object detection, and semantic segmentation.
+                </li>
+                <br>
+                <li>
+                    <strong>Accuracy Achieved:</strong> 50 epocs;  90% , 100 epocs; 93%;
+                </li>
+            </ul>
+
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="imgs\mobilenetV2.png" alt="Image">
+    </div>
+</div>
+</section>
+
+<section class="section ow">
+    <h1>VGG 19</h1>
+<div class="details-container">
+    <!-- <h1 class="heading">Heading</h1> -->
+    <div class="text-container">
+        <p>
+            VGG 19 is a deep convolutional neural network architecture that was introduced by the Visual Geometry Group (VGG) at the University of Oxford in 2014.
+            <ul>
+                <li>The VGG 19 architecture is composed of 19 layers, including 16 convolutional layers and 3 fully connected layers. The convolutional layers use small 3x3 filters with a stride of 1, which enables the network to capture detailed features at different scales.</li>
+                <br>
+                <li>
+                    The network uses max pooling layers to downsample the feature maps and increase the receptive field of the filters.
+                </li>
+                <br>
+                <li>
+                    VGG 19 has a relatively simple architecture compared to other deep convolutional neural networks, which makes it easier to train and analyze. 
+                </li>
+                <br>
+                <li>
+                    The network uses batch normalization to normalize the activations of each layer, which helps to improve the stability and convergence of the training process.
+                </li>
+                <br>
+                <li>
+                    VGG 19 is frequently used as a pre-trained model for transfer learning, where the weights learned on large datasets like ImageNet are used as a starting point for training on smaller datasets. 
+                </li>
+                <br>
+                <li>
+                    <strong>Accuracy Achieved:</strong> 50 epocs;  90% , 100 epocs; 91%;
+                </li>
+            </ul>
+
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="imgs\vgg19.png" alt="Image">
+    </div>
+</div>
+
+</section>
+
+<section class="link-container">
+    <a class="Link primary-link" href="Files/CNN on Manual Spinach Data.ipynb">View Source Code</a> 
+    <a class="Link primary-link" href="Files/Conference-template-A4 (1).doc">View Paper</a>
+</section>
+
+<footer class="footer">
+    <div class="footer-header">Contact Us</div>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline"><a class="Link" href="https://github.com/gpradhan07">GitHub</a></li>
+        <li class="list-item-inline"><a class="Link" href="https://twitter.com/_pradhan_07">Twitter</a></li>
+        <li class="list-item-inline"><a class="Link" href="https://www.linkedin.com/in/gourav-pradhan-9932b4208/">LinkedIn</a></li>
+    </ul>
+</footer>
+<script src="models.js"></script>
+</body>
+</html>

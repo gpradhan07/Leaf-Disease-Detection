@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #53c3e2;
+    --off-white:#F3F4F6;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin:0 auto;
+    max-width: 95%;
+    width: 100%;
+}
+.details-container {
+    display: flex;
+    /* padding-top: 5em; */
+    
+} 
+.section {
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    /* text-align: center; */
+
+}
+.section h1 {
+    text-align: center;
+}
+.ow{
+    background-color: var(--off-white);
+}
+.text-container {
+    flex: 1;
+    padding: 20px;
+    -ms-flex-align: center;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.primary-link {
+    background-color: var(--primary-color);
+    color: white;  
+    max-width: 200px;
+    border-radius: 2rem; 
+    padding: 1rem 1rem;
+    
+    /* margin: 1rem auto; */
+    /*display: inline-block;*/
+}
+
+.secondary-link {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 2rem ;
+    padding: 0.6rem 1.4rem;
+    max-width: 240px;
+    margin: 1rem auto;
+}
+.link-container {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 14px 50px;
+    text-decoration: none;
+    transition: all 0.3ec ease;
+}
+.link-container:hover{
+    transform: scale(1.05);
+}
+.link-container a{
+    display: inline-block;
+}
+#lastImg {
+    max-width: 350px;
+    max-height: 300px;
+}
+.img3 {
+    margin-top: 2rem;
+}
+.img4 {
+    margin-top: 3rem;
+}
+.Link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Navigation bar */
+.list-non-bullet {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    line-height: 50px;
+    padding: 1rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.navigation .nav-brand{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.navigation .nav-pills{
+    text-align: right;
+    margin: 0.6rem 1rem;
+}
+.navigation .Link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    line-height: 30px;
+    text-align: center;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    color: white;
+}
+ 
+
+.footer .Link {
+    color: white;
+    font-size: 15px;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
